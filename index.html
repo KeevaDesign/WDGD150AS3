@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat Age Calculator</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="catStageAnimation" width="400" height="300"></canvas>
+
+        <div class="form">
+            <h2>Please enter your cat's age</h2>
+            <label for="catYear">Year:</label>
+            <input type="number" name="catYear" id="catYear" min="0" step="1" value="0">
+
+            <label for="catMonth">Month:</label>
+            <input type="number" name="catMonth" id="catMonth" min="0" max="12" step="1" value="0">
+        </div>
+        <div>
+            <button>Calculate</button>
+            <button type="button" id="resetButton" class="resetBtn">Reset</button>
+        </div>
+        <!-- <p id="showTotalMonth">Here</p> -->
+        <div>
+            <h2>Your cat’s age is equal to human age:</h2>
+            <!-- <p id="humanAge"> </p>
+            Life Stage:
+            <p id="lifeStage"></p> -->
+        </div>
+
+        <canvas id="badgeCanvas" width="400" height="400"></canvas>
+
+        <script defer src="assets/script.js"></script>
+
+    </div>
+</body>
+
+</html>
